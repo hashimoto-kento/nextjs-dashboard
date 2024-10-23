@@ -9,12 +9,12 @@ import { RevenueChartSkeleton,
         CardsSkeleton,
 } from '@/app/ui/skeletons';
 
+export const metadata = {
+  title: 'Dashboard',
+}
+
 export default async function Page() {
   const {
-    numberOfInvoices,
-    numberOfCustomers,
-    totalPaidInvoices,
-    totalPendingInvoices
   } = await fetchCardData();
 
   return (
