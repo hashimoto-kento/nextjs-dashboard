@@ -1,7 +1,7 @@
 import '@/app/ui/global.css';
 import { Metadata } from 'next';
 
-export const meta: Metadata = {
+export const metadata: Metadata = {
   title: {
     template: '%s | Acme Dashbooard',
     default: 'Acme Dashboard',
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={'${inter.className} antialiased'}>{children}</body>
+      <body className='antialiased'>{children}</body>
     </html>
   );
 }
